@@ -1,0 +1,441 @@
+body
+{
+	margin: 0px;
+	background-color: rgb(201,222,255);
+}
+
+/*------------Navbar Styles-------------*/
+
+nav
+{
+	background: linear-gradient(45deg,rgb(141,150,255),rgb(43,60,250));
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+nav h1
+{
+	margin:0px;
+	font-size:40px;
+	margin-left:50px;
+}
+
+nav h1 img
+{
+	width:50px;
+	height:50px;
+	position:relative;
+	top:10px;
+	border-radius: 110px;
+	padding-right:4px;
+}
+
+nav .links a
+{
+	color:white;
+	text-decoration:none;
+	margin:25px;
+	background-color:rgb(11,17,92);
+	padding:6px 20px;
+	border-radius:10px;
+	position:relative;
+
+}
+
+nav .links a:hover
+{
+	box-shadow:0 0 10px white;
+}
+.fa
+{
+	padding-right:3px;
+}
+
+
+@media (max-width:1000px)
+{
+	nav 
+	{
+		flex-direction:column;
+		height:150px;
+	}
+	nav .links a
+	{
+		top:-34px!important;
+	}
+}
+
+@media (min-width:0px) and (max-width:650px)
+{
+	nav .links a
+	{
+		display:block;
+		width:100%;
+		top:10px;
+	}
+	nav
+	{
+		height:300px;
+	}
+	nav .links
+	{
+		position:relative;
+		top:20px;
+	}
+}
+
+/*-------------Landing Page-------------*/
+.landing
+{
+	background:white url("../images/team1.jpg") no-repeat scroll center;
+	background-size:cover;
+	height:100vh;
+}
+.landing .wrapper
+{
+	text-align:center;
+	background-color:rgba(0, 0,0,0.5);
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	color:whitesmoke;
+}
+.landing .wrapper h1
+{
+	margin:0px;
+	font-size:40px;
+
+}
+
+.landing .wrapper button
+{
+	 background-color:lightblue;
+	 outline:none;
+	 border:none;
+	 padding:10px 30px;
+	 color:darkblue;
+	 border-radius:20px;
+	 font-weight:bold;
+}
+.landing .wrapper button:hover
+{
+	box-shadow:0 0 10px white;
+}
+
+/*------Main Content---------*/
+
+#main-content-section
+{
+	text-align:center;
+	margin:15px;
+}
+.main-content-article
+{
+	border:2px solid darkblue;
+	width:330px;
+	/*display:inline-block;*/
+	display:inline-grid;
+	height:450px;
+	border-radius:0px 30px 0px 30px;
+	margin:5px;
+	transition:all 1s;
+}
+.main-content-article img
+{
+	width:100%;
+}
+
+.main-content-article h2
+{
+	color:darkblue;
+}
+.main-content-article:hover
+{
+	box-shadow:0 0 10px blue;
+	cursor:pointer;
+	width:340px;
+}
+
+/*---------Main News Section----------*/
+#main-news-section
+{
+	width:80%;
+	margin:auto;
+}
+.main-news-article
+{
+	box-shadow:0 0 10px blue;
+	border-radius:15px;
+}
+
+.main-news-article h2
+{
+	background:linear-gradient(45deg,rgb(141,150,255),rgb(43,60,250));
+	padding:20px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+	color:white;
+	font-size:30px;
+}
+
+.zoom
+{
+	width:600px;
+	height:300px;
+	margin:auto;
+	box-shadow:0 0 10px blue;
+	border-radius:10px;
+	overflow:hidden;
+}
+
+.zoom img
+{
+	width:inherit;
+	height:inherit;
+	border-radius:10px;
+	transition:all 1s;
+}
+.zoom:hover img
+{
+	transform:scale(1.2,1.2);
+}
+.main-news-article p
+{
+	padding:10px;
+	font-size:20px;
+}
+
+@media (min-width:0px) and (max-width:800px)
+{
+	.zoom
+	{
+		width:400px;
+	}
+}
+
+@media (min-width:0px) and (max-width:500px)
+{
+	.zoom
+	{
+		width:300px;
+	}
+}
+
+
+
+/*------------Gallery---------*/
+
+#gallery-section h1
+{
+	text-align: center;
+	border-radius:15px;
+	border: 5px solid black;
+	padding: 30px;
+	background: linear-gradient(45deg,grey,black,grey,black,grey);
+	color: white;
+	box-shadow: 0 0 20px black;
+	transition: all 1s ease-out;
+}
+
+#gallery-section
+{
+	text-align:center;
+	margin:15px;
+}
+.gallery-article
+{
+	border:3px solid darkblue;
+	width:330px;
+	/*display:inline-block;*/
+	display:inline-grid;
+	height:450px;
+	border-radius:0px 30px 0px 30px;
+	margin:5px;
+	transition:all 1s;
+}
+.gallery-article img
+{
+	width:330px;
+	height: 350px;
+	border-radius:0px 30px 0px 30px;
+
+}
+
+
+.gallery-article h2
+{
+	color:darkblue;
+}
+.gallery-article:hover
+{
+	box-shadow:0 0 30px blue;
+	cursor:pointer;
+	width:340px;
+}
+
+/*------------Matches------------*/
+
+#Matches h1
+{
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid black;
+    box-shadow: 0 0 20px black;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    
+
+}
+
+
+#Matches-section
+{
+	width:80%;
+	margin:auto;
+
+}
+
+
+.Matches-article
+{
+	box-shadow:0 0 10px blue;
+	border-radius:15px;
+	background: linear-gradient(135deg,orange,pink,orange,pink,orange);
+    transition: all 1s;
+}
+.Matches-article:hover
+{
+	box-shadow: 0 0 30px blue;
+	cursor:pointer;
+	transform: scale(1.1,1.1);
+}
+
+.Matches-article h2
+{
+	background:linear-gradient(45deg,black,grey);
+	padding:20px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+	color:white;
+	font-size:30px;
+
+}
+
+
+.Matches-article p 
+{
+	padding:10px;
+	font-size:20px;
+	text-align: center;
+	font-family: 'comic sans ms',sans-serif;
+}
+
+
+/*-----------About----------*/
+div #About
+		{
+			/*background-color: lightcoral;*/
+			width: 300px;
+			border-radius: 30px;
+			box-shadow: 0 0 10px black;
+
+			
+		}
+	    #About h1
+	    {
+	    	text-align: center;
+	    	padding: 30px;
+	    	border: 3px solid black;
+	    	border-radius: 30px;
+	    	box-shadow: 0 0 20px black;
+	    	background: black;
+	    	color: whitesmoke;
+
+	    }
+	    aside
+	    {
+	    	background-color: black;
+	    	width: 250px;
+	    	height: 820px;
+	    	float: left;
+	    }
+	    aside a
+	    {
+	    	color: white;
+	    	text-decoration: none;
+	    	display: block;
+	    	margin-bottom: 30px;
+	    	background-color: grey;
+	    	padding: 7px 20px;
+	    	border-radius: 20px;
+	    }
+	    aside a:hover
+	    {
+	    	box-shadow: 0 0 10px white;
+	    }
+	    #first
+	    {
+	    	position: relative;
+	    	top: 10px;
+	    }
+
+
+		fieldset
+		{
+			border-radius: 20px 5px;
+			border: 3px solid grey;
+			margin-top: 20px;
+			box-shadow: 0 0 30px whitesmoke;
+		}
+		fieldset  legend
+		{
+			border-radius: inherit;
+			border: inherit;
+			padding: 10px 20px;
+			margin-top: -40px;
+			font-size: 30px;
+			border: 3px solid grey;
+			box-shadow: 0 0 30px whitesmoke;
+			
+		}
+
+   
+    div  .back
+    {
+    	background: linear-gradient(45deg,grey,skyblue,grey,skyblue,grey,skyblue);
+    	color: lightbrown;
+    }
+    div  .back a
+    {
+    	color: brown;
+    }
+     div  .back a:hover
+    {
+    	color: blue;
+    	box-shadow: 0 0 20px;
+    }
+    div  .back p
+    {
+    	font-size: 20px;
+    	font-family: 'comic sans ms',sans-serif;
+
+    }
+
+    /*-----------Main Footer----------------*/
+footer
+{
+	background:linear-gradient(45deg,rgb(141,150,255),rgb(43,250,250));
+	text-align:center;
+	margin-top: -10px;
+
+}
+footer h1
+{
+	margin: 0px;
+}
+    
